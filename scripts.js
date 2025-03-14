@@ -1,35 +1,66 @@
-// Case Sensitive
+// Tipos de dados
+
+// Template literals (Template strings, interpolação de strings)
 let username = "Arthur"
-let userName = "João"
+let email = "arthur@email.com"
 
-console.log(username)
-console.log(userName)
+// Concatenar strings
+let message = "Olá, " + username + ", seu e-mail é " + email
+console.log(message)
 
-// Podemos
-let $email = "rodrigo@email.com"
-let _email = "joao@gmail.com"
-let ação = "Cadastrar"
-let user_email = "ana@email.com"
+// Template literals
+console.log(`Olá, ${username}. Você conectou seu e-mail  ${email}.`)
+console.log("Login efetuado com sucesso.")
+// ----------------------------------------------------------------------------------------
 
-console.log($email)
-console.log(_email)
-console.log(ação)
-console.log(user_email)
+// Number
 
-// Não podemos criar variáveis com palavras reservadas
-// let 1user = "Arthur"
-//let product name = "Teclado"
+// Inteiro positivo.
+console.log(typeof 5)
 
-// Recomendações camelCase
-let FullName = "Arthur Dias Gomes Gerhardt"
-// Criar nomes que fazem sentido
-let productName = "Notebook"
-let productPrice = 1200
-let firstName = "Arthur"
-let lastName = "Gerhardt"
+console.log(5)
 
-console.log(FullName)
-console.log(productName)
-console.log(productPrice)
-console.log(firstName)
-console.log(lastName)
+// Inteiro negativo.
+console.log(-5)
+
+// Números reais ou float
+console.log(127.50)
+
+// Not a Number NaN
+console.log(12.5 / "Arthur")
+
+// ----------------------------------------------------------------------------------------
+// Boolean
+
+let isLoading = true
+console.log(true)
+console.log(false)
+console.log(isLoading)
+
+// ----------------------------------------------------------------------------------------
+// Undefined e Null
+let empytiness
+console.log("O valor é: ", empytiness)
+
+let empty = null
+console.log("O valor é: ", empty)
+
+// ----------------------------------------------------------------------------------------
+// Conversão de tipos e coersão de tipos
+
+let value = "9"
+console.log("9")
+console.log(typeof "9")
+console.log(Number("9"))
+console.log(typeof Number("9"))
+
+let age = 18
+console.log(typeof age)
+console.log(String(age))
+console.log(typeof String(age))
+
+let option = 1
+console.log(option)
+console.log(typeof option)
+console.log(Boolean(option))
+console.log(typeof Boolean(option))

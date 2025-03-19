@@ -1,18 +1,11 @@
-// Estritamente igual a (tipo e valor)
-let one = 1;
-let oneString = '1';
-let two = 2;
-let twoString = '2';
+// If (Se)
 
-console.log(one)
-console.log(two)
-console.log(one === oneString); // false
-console.log(one === 1); // true
-console.log(one === two); // false
-console.log(one === twoString); // false
-
-// Estritamente diferente de (tipo e valor)
-console.log(one !== oneString); // true
-console.log(one !== 1); // false
-console.log(one !== two); // true
-console.log(one !== twoString); // true
+let age = 17
+if (age < 18) {
+    console.log("Você não pode dirigir.")
+    console.log(age)
+}
+else if (age >= 18 && age < 70) {
+    console.log("Você pode dirigir.")
+    console.log(age)
+}

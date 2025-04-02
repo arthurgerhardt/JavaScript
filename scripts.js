@@ -1,27 +1,14 @@
-// Callback function, é uma função passada para outra função como argumento.
+// Lógica para adicionar convidados à lista
+const botaoAdicionar = document.getElementById('adicionar');
+const campoNome = document.getElementById('nome');
+const listaConvidados = document.querySelector('.guest-list');
 
-function execute(taskName, Callback) {
-    console.log(`Executando tarefa: ${taskName}`);
-
-    Callback();
-}
-
-function Callback() {
-    console.log('Tarefa completada.');
-}
-
-// Example of using the execute function with a callback
-execute('Download file', Callback);
-
-// Callback function with parameters
-execute('Upload file', function() {
-    console.log('Task completed with parameters!');
-}
-);
-
-// Utilizando uma arrow function como callback
-execute('Excluindo arquivo', () => {
-    console.log('Arquivo excluído com sucesso');
+botaoAdicionar.addEventListener('click', () => {
+    const nome = campoNome.value.trim();
+    if (nome !== "") {
+        const item = document.createElement('div');
+        item.textContent = nome;
+        listaConvidados.appendChild(item);
+        campoNome.value = ""; // Limpa o campo de entrada
+    }
 });
-
-execute('Salvando arquivo', () => console.log('Arquivo salvo com sucesso'));

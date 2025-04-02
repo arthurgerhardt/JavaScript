@@ -1,0 +1,52 @@
+body {
+  background-color: #000; /* Fundo preto */
+  color: #fff; /* Texto branco */
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px; /* Centralizar conteúdo */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: calc(100% - 100px); /* Ajustar largura */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333; /* Fundo cinza escuro */
+  color: #fff;
+}
+
+button {
+  width: 80px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #6a0dad; /* Roxo do botão */
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5a0cad; /* Um tom mais escuro no hover */
+}
+
+.guest-list {
+  margin-top: 20px;
+}
+
+.guest-list div {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #333; /* Caixa cinza escuro */
+  border-radius: 5px;
+}

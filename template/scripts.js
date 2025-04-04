@@ -1,15 +1,13 @@
-const input = document.querySelector('#name');
+const newGuest = document.createElement("li")
+const guestName = document.createElement("span")
 
-// Adiciona a classe "input-error" ao input quando o campo não estiver preenchido
-//input.classList.add("input-error");
+guestName.textContent = "Diego"
 
-// Remove a classe "input-error" ao input quando o campo estiver preenchido
-//input.classList.remove("input-error");
+const newName = document.createElement("span")
+newName.textContent = "Fernandes"
 
-// Se não tiver a classe adiciona. Se tem, remove.
-//input.classList.toggle("input-error"); // Alterna a classe "input-error"
+// Adiciona após o último filho
+newGuest.appendChild(guestName)
+newGuest.appendChild(newName)
 
-const button = document.querySelector("button");
-
-// Modificar as propriedades css do elemento.
-button.style.backgroundColor = "red"; // Muda a cor do botão para vermelho
+console.log(newGuest)
